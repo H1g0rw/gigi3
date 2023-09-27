@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site pra gigi</title>
+    <style>
+        body{
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header{
+            text-align: center;
+        }
+        main{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+        }
+        .texto{
+            width: 100%;
+            height: 550px;
+            border: black solid .125rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>De: <i>Higor</i></h2>
+        <h3>Para: <i>Minha princesa</i></h3>
+    </header>
+    <main>
+        <h2>Escrevendo porque você não deixou eu comprar seu livro :)</h2>
+        <input type="button" value="Receber texto" onclick="texto1()">
+        <div class="texto">
+
+        </div>
+    </main>
+    <script>
+        function texto1(){
+            let txt = document.querySelector(`.texto`);
+            txt.innerText = `
+            O meu bem você não deixa eu me divertir em comprar as coisas para você viu porra kkkkkkkk
+
+            Mas mesmo assim eu gosto de você 
+
+            Saiba que você me faz bem viu eu adoro ter você e sempre vou gostar mal posso esperar para poder sentir o toque dos
+            seus lábios no meu novamente meu bem poder sentir seu abraço...
+
+            O melhor de tudo é que a mulher maravilha ta do meu lado
+
+            Você é uma mulher que eu admiro muito, saiba disso e eu espero que possamos crescer juntos
+            espero poder comemorar suas conquistas com você, estou sempre torcendo por você, minha ratinha de academia
+
+            E me perdoa porque eu nao tenho palavras pra descrever oque eu sinto entao olha coloca isso no youtube:
+
+            https://youtube.com/watch?v=qL9VDKaSO_s&si=xVT2tbEgyoy0reF8
+            Matheus e Kauan - te assumir pro Brasil (0:20 - 1:30)
+
+            EM MENOS DE 1 MES...
+
+
+            Eu sei que isso paraçe meio doido mas sempre que acontecer algo ruim fica tranquila eu prometo que posso te ajudar até ficar tudo bem...
+        `
+        }
+        
+    </script>
+</body>
+</html>
